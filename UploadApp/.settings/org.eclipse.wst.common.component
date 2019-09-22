@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="UploadApp">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="struts.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/Softwares/Zoom api/struts.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cos.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/Softwares/Zoom api/cos.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="uploadbean.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/Softwares/Zoom api/uploadbean.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="UploadApp"/>
+        <property name="java-output-path" value="/UploadApp/build/classes"/>
+    </wb-module>
+</project-modules>

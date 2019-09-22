@@ -1,0 +1,7 @@
+SQL> create table product_info(product_id number(5) primary key,name varchar2(10),quantity number(3),price number(5));
+
+Table created.
+
+SQL> create sequence pr_id start with 100 increment by 1;
+
+Sequence created.

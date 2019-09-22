@@ -1,0 +1,13 @@
+<web-app>
+  <servlet>
+    <servlet-name>marriage</servlet-name>
+    <servlet-class>student.radhe.servlet.MarriageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>marriage</servlet-name>
+    <url-pattern>/marry</url-pattern>
+	</servlet-mapping>   
+	<welcome-file-list>
+	<welcome-file>input.html</welcome-file>
+	</welcome-file-list>
+</web-app>

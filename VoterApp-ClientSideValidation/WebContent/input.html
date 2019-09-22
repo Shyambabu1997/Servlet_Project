@@ -1,0 +1,47 @@
+<h1 style=color:blue;text-align:center>Wel-Come to Our Website</h1><hr><br>
+<h3 style=text-align:left;color:red;>Check Eligibility Details:</h3>
+<script language="Javascript">
+function validation(fm){
+var name=fm.pname.value;
+var age=fm.page.value;
+var faname=fm.fname.value;
+
+if(name==""){
+	alert("Person name is mandatory");
+frm.name.focus;
+	return false;
+}
+
+if(faname==""){
+	alert("Father's name is mandatory");
+	frm.fname.focus;
+	return false;
+}
+
+if(age==""){
+	alert("Age is mandatory");
+	frm.age.focus;
+	return false;
+}
+if(isNaN(age))
+	{
+	alert("Person age must be numeric value")
+	return false;
+	}
+else if(age<1 || age>125)
+	{
+	alert("Person age must be 1 to 125");
+	return false;
+	}
+	return true;
+}
+</script>
+<form action="voterurl"  name="fm" method="post" onsubmit="return validation(this)">
+<b>
+Person Name:&nbsp;&nbsp;<input type="text" name="pname"><br>
+Fater's Name:&nbsp;&nbsp;<input type="text" name="fname"><br>
+Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="page"><br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Check Eligibility">
+
+</b>
+</form>

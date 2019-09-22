@@ -1,0 +1,46 @@
+<h1 style=color:red;text-align:center;>Wel-come To Marriage Suggestion</h1><br><hr>
+<script language="Javascript">
+
+
+function valid(fm)
+{
+	document.getElementById("nameErr").innerHTML=" ";
+	document.getElementById("ageErr").innerHTML=" ";
+	
+	var name=fm.pname.value;
+	var age=fm.page.value;
+	if(name=="")
+		{
+		document.getElementById("nameErr").innerHTML="Person name is mandatory";
+		fm.pname.focus;
+		return false;
+		}
+	if(age=="")
+	{
+	document.getElementById("ageErr").innerHTML="Person age is mandatory";
+	fm.page.focus;
+	return false;
+	}
+	if(isNaN(age))
+		{
+		document.getElementById("ageErr").innerHTML="Person age must be number type";
+		fm.page.focus;
+		return false;
+		}
+	else if(age<0 || age>125)
+		{
+		document.getElementById("ageErr").innerHTML="Person age must be 1 to 125";
+		fm.page.focus;
+		return false;
+		}
+	return true;
+
+	}
+</script>
+<form action="marry" method="get" name ="fm" onsubmit=" return valid(this)">
+Name:&nbsp;&nbsp;<input type="text" name="pname"><span id="nameErr"></span><br>
+Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="page"><span id="ageErr"></span><br>
+Gender:&nbsp;&nbsp;<input type="radio" value='M' name="male" checked>Male
+<input type="radio" value='F' name="male">Female<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Check Eligibility">
+</form>

@@ -1,0 +1,12 @@
+<web-app>
+<servlet>
+<servlet-name>season</servlet-name>
+<servlet-class>student.radhe.servlet.SeasonServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>season</servlet-name>
+<url-pattern>*.babu</url-pattern>
+<url-pattern>/shyam</url-pattern>
+<url-pattern>/shyam/*</url-pattern>
+</servlet-mapping>
+</web-app>

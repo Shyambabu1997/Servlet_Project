@@ -1,0 +1,31 @@
+<h1 style="color:red;text-align:center">Welcome to Our Webpage</h1><hr><br>
+<h3 style="color:blue;text-align:left">Enter Following Details:</h3><br>
+<form action="processurl" method="get" name="frm">
+Enter First Value:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="text1"><br><br>
+Enter Second Value:&nbsp;<input type="text" name="text2"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" name="s1" value="add1" onclick="setAdd()">&nbsp;&nbsp;&nbsp;
+<input type="submit" name="s1" value="sub1" onclick="setSub()">&nbsp;&nbsp;&nbsp;
+<input type="submit" name="s1" value="mul1" onclick="setMul()">&nbsp;&nbsp;&nbsp;<br><br>&nbsp;&nbsp;&nbsp;
+<input type="hidden" name="src" value=" ">
+<a href="processurl?src=link1">Get Date & Time</a>&nbsp;&nbsp;&nbsp;
+<a href="processurl?src=link2">Get Sys Proptz</a>
+</form>
+<script language="Javascript">
+
+function setAdd()
+{
+	frm.src.value="sum";
+	return true;
+		}
+function setSub()
+{
+	frm.src.value="minus";
+	return true;
+	}
+function setMul()
+{
+	frm.src.value="product";
+	return true;
+	}
+
+</script>
